@@ -10,6 +10,8 @@ Una vez generado el password se puede copiar en el portapapeles para utilizarlo 
 
 ![Ejemplo de uso](./img/Generador%20password%20HTML-CSS-JS%202.png)
 
+![Ejemplo de uso](./img/Generador%20password%20HTML-CSS-JS%203.png)
+
 ### Funcionalidades disponibles ###
 - [X] Seleccionar el tamaño del password.
 - [X] Seleccionar que caracteres van a formar parte del password.
