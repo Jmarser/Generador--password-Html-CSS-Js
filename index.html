@@ -13,8 +13,8 @@
 <body>
     <div class="container__generator">
         <div class="generator__header">
-            <div class="show__password" id="">
-                <textarea name="" id="show-pass" class="show__pass" cols="40" rows="1"></textarea>
+            <div class="show__password">
+                <textarea name="passResult" id="show-pass" class="show__pass" cols="40" rows="1"></textarea>
                 <button id="copy"><span class="material-icons-outlined">content_paste</span></button>
             </div>
         </div>
@@ -23,7 +23,7 @@
                 <legend class="legend__pass">Opciones password</legend>
                 <div class="options">
                     <h5>Tamaño del password:</h5>
-                    <input type="number" name="" id="length" min="4" max="40" autofocus>
+                    <input type="number" name="lengthPass" id="length" min="4" max="40" autofocus>
                 </div>
                 <div class="options">
                     <h5>Letras mayúscula:</h5>
@@ -58,9 +58,22 @@
         </div>
 
     </div>
-
-
-
+    <div class="validaciones">
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="¡CSS Válido!" />
+            </a>
+        </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="¡CSS Válido!" />
+                </a>
+            </p>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
