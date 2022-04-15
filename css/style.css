@@ -1,0 +1,210 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    background-color: #e0e0e0;
+}
+
+.uil{
+    font-size: 4rem;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.container__generator{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 11px;
+    background: #a5e3ee;
+    box-shadow:  12px 12px 24px #b3b3b3, -12px -12px 24px #ffffff;
+}
+
+.generator__header{
+    width: 100%;
+    padding: 2rem;
+}
+
+.show__password{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .2rem;
+    padding: 0 5px;
+    height: 50px;
+    background-color: whitesmoke;
+}
+
+.show__pass{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: transparent;
+    padding: .5rem;
+    resize: none;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.show__password button{
+    cursor: pointer;
+    background: #4dd3ea;
+    position: relative;
+}
+
+.show__pass + button::before{
+    content: "Copiado!";
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    right: -30px;
+    bottom: 40px;
+    background-color: #4dd3ea;
+    padding: 1rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: none;
+}
+
+.show__pass + button::after{
+    content: "";
+    position: absolute;
+    background-color: #4dd3ea;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    bottom: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    display: none;
+}   
+
+.show__pass.active + button::before,
+.show__pass.active + button::after{
+    display: block;
+}
+
+
+.generator__body{
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.generator__options{
+    padding: 1rem;
+}
+
+.legend__pass{
+    text-align: center;
+    font-weight: bold;
+    padding: 0 .5rem;
+}
+
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 0;
+}
+
+.content__toggle{
+    padding: .5rem 0;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+}
+
+.switch::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    left: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+input[type='number']{
+    height: 25px;
+    width: 60px;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+}
+
+input[type='checkbox']:checked + .switch{
+    background-color: green;    
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+.gen{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+background: #4dd3ea;
+box-shadow:  -8px -8px 9px #9f9f9f,
+             8px 8px 9px #ffffff;
+}

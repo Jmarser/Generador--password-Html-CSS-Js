@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jmarser">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador password</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container__generator">
+        <div class="generator__header">
+            <div class="show__password" id="">
+                <textarea name="" id="show-pass" class="show__pass" cols="40" rows="1"></textarea>
+                <button id="copy"><span class="material-icons-outlined">content_paste</span></button>
+            </div>
+        </div>
+        <div class="generator__body">
+            <fieldset class="generator__options">
+                <legend class="legend__pass">Opciones password</legend>
+                <div class="options">
+                    <h5>Tamaño del password:</h5>
+                    <input type="number" name="" id="length" min="4" max="40" autofocus>
+                </div>
+                <div class="options">
+                    <h5>Letras mayúscula:</h5>
+                    <div class="content__toggle">
+                        <input type="checkbox" name="toggle" id="toggle1">
+                        <label for="toggle1" class="switch"></label>
+                    </div>
+                </div>
+                <div class="options">
+                    <h5>Letras minúsculas:</h5>
+                    <div class="content__toggle">
+                        <input type="checkbox" name="toggle" id="toggle2">
+                        <label for="toggle2" class="switch"></label>
+                    </div>
+                </div>
+                <div class="options">
+                    <h5>Números:</h5>
+                    <div class="content__toggle">
+                        <input type="checkbox" name="toggle" id="toggle3">
+                        <label for="toggle3" class="switch"></label>
+                    </div>
+                </div>
+                <div class="options">
+                    <h5>Caracteres especiales:</h5>
+                    <div class="content__toggle">
+                        <input type="checkbox" name="toggle" id="toggle4">
+                        <label for="toggle4" class="switch"></label>
+                    </div>
+                </div>
+            </fieldset>
+            <button class="btn gen" id="gen">Generar Password</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
